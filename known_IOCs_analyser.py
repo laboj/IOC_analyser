@@ -24,7 +24,7 @@ def calculate_sha256(filename):
         hash_value = hash_object.hexdigest()
         return hash_value
 
-#analysis report
+#analysis & report
 samples = Path("samples")
 print("========== FILE IOC ANALYSIS ==========\n")
 if samples.is_dir():
