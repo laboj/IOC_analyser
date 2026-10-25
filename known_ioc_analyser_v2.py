@@ -51,11 +51,11 @@ if samples.is_dir():
             print(f"Status: unable to analyze {item.name}\n")
             continue
 
-            #hash calculated successfully
-            files_scanned += 1
+        #hash calculated successfully
+        files_scanned += 1
 
-            print(f"FileName: {item.name}")
-            print(f"SHA-256: {hash_value}")
+        print(f"FileName: {item.name}")
+        print(f"SHA-256: {hash_value}")
 
         #check for ioc match
         if hash_value in known_ioc:
